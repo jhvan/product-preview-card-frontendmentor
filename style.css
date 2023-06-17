@@ -1,0 +1,138 @@
+
+@media (min-width:576px) {
+    img#mobile {
+        display: none;
+    }
+    main{
+        display: flex;
+        height: 90vh;
+        align-items: center;
+    }
+    .card{
+        width: 576px;
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+    }
+    img#desktop{
+        width:50%;
+    }
+    .description {
+        width: 50%;
+    }
+}
+
+@media (max-width:576px) {
+    .card{
+        max-width: 375px;
+    }
+    img#desktop{
+        display:none;
+    }}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#mobile{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    background-color: hsl(0,0%, 100%);
+    border-radius: 1em;
+    margin:auto;
+    overflow: hidden;
+    align-self: center;
+}
+
+.description{
+   padding: 1.75em;
+}
+
+h1{
+    text-transform:uppercase;
+    font-size: inherit;
+    letter-spacing: .5em;
+    opacity: 75%;
+    color: hsl(228, 12%, 48%);
+    margin: auto;
+}
+
+h2, h3{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+p{
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    word-spacing: 1px;
+    letter-spacing: 1px;
+
+}
+
+h2{
+    color: hsl(212, 21%, 14%);
+}
+
+.price{
+    display: flex;
+    height: auto;
+    padding: 1em 0;
+    flex-wrap: wrap;
+}
+
+h3{
+    color:hsl(158, 36%, 37%);
+    margin: 0;
+}
+
+h4{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    margin: auto 1em;
+}
+
+button {
+    background-color:hsl(158, 36%, 37%);
+    border: none;
+    width: 100%;
+    font-family: inherit;
+    font-weight: 700;
+    color:hsl(0,0%, 100%);
+    padding: 1em;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+}
+@media (min-width:576px){
+button:hover {
+    background-color: hsl(158, 36%, 17%);
+}}
+
+svg {
+    padding-inline: 1em;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    padding: 1em;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none; 
+    color: hsl(158, 36%, 37%)
+}
+
+@media (min-width:576px){
+.attribution a:hover {
+    color:hsl(158, 36%, 17%);
+}}
